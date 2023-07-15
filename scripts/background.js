@@ -3,7 +3,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
   if (
     changeInfo.status === "complete" &&
     tabUrl &&
-    tabUrl.includes("someurl.com")
+    tabUrl.includes("hulu.com/hub/home")
   ) {
     chrome.scripting.insertCSS({
       target: { tabId: tabId },

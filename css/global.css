@@ -1,3 +1,3 @@
-.css-selector {
+.VideoPreviewPlayer, button[data-testid='__video-volume-btn'] {
   display: none !important;
 }
