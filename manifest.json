@@ -1,14 +1,14 @@
 {
   "manifest_version": 3,
-  "name": "Browser Extension Template",
+  "name": "Disable Hulu Trailers",
   "version": "0.0.1",
   "description": "This is a starter template for a Chrome browesr extension.",
    "permissions": ["scripting"],
   "icons": {
-    "16": "images/hide-emoji-16.png",
-    "32": "images/hide-emoji-32.png",
-    "48": "images/hide-emoji-48.png",
-    "128": "images/hide-emoji-128.png"
+    "16": "images/film-emoji-16.png",
+    "32": "images/film-emoji-32.png",
+    "48": "images/film-emoji-48.png",
+    "128": "images/film-emoji-128.png"
 },
 "background": {
     "service_worker": "scripts/background.js"
@@ -17,20 +17,20 @@
   {
     "resources": ["css/*.css"],
     "extension_ids": [
-      ""
+      "jiegknmememoaiapipmjoefojibhajij"
     ]
     }
   ],
 "content_scripts": [
     {
         "matches": [
-        "*://www.someurl.com/*"
+        "*://www.hulu.com/hub/home/*"
       ],
       "css": ["css/global.css"]
     }
 ],
   "host_permissions": [
-    "*://www.someurl.com/*"
+    "*://www.hulu.com/hub/home/*"
   ],
   "action": {
       "default_popup": "popup.html"
