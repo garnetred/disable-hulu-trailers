@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Disable Hulu Trailers",
   "version": "0.0.1",
-  "description": "This is a starter template for a Chrome browesr extension.",
+  "description": "This Chrome browser extensions hides Hulu trailers on the home page.",
    "permissions": ["scripting"],
   "icons": {
     "16": "images/film-emoji-16.png",
@@ -26,7 +26,7 @@
         "matches": [
         "*://www.hulu.com/hub/home/*"
       ],
-      "css": ["css/global.css"]
+      "js": ["scripts/popup.js"]
     }
 ],
   "host_permissions": [
