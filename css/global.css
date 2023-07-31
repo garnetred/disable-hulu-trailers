@@ -1,3 +1,5 @@
-.VideoPreviewPlayer, button[data-testid='__video-volume-btn'] {
+.VideoPreviewPlayer,
+button[data-testid='__video-volume-btn'],
+div[data-testid='ClosedCaption'] {
   display: none !important;
 }
