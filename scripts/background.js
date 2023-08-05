@@ -5,11 +5,11 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     tabUrl &&
     tabUrl.includes('hulu.com/hub/home')
   ) {
-    // chrome.scripting.insertCSS({
-    //   target: { tabId: tabId },
-    //   files: ["css/global.css"],
-    // });
+    chrome.scripting.insertCSS({
+      target: { tabId: tabId },
+      files: ['css/global.css'],
+    });
     // send message to content scripts to remove attribute from video tag with "VideoPreviewPlayer" class
-    chrome.tabs.sendMessage(tabId, { pageLoaded: true });
+    // chrome.tabs.sendMessage(tabId, { pageLoaded: true });
   }
 });
